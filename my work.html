@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  
+
+ 
+  <style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type=text], textarea {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 1px grey;
+			width: 100%;
+		}
+		input[type=submit] {
+			background-color: #246e16;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: #246e16;
+		}
+
+
+
+		input[type=reset] {
+			background-color: #246e16;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+		input[type=reset]:hover {
+			background-color: #246e16;
+		}
+
+	</style>
+
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>my website | my work</title>
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #ffffff;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+        
+        
+         <!--alets-->
+        
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+         .alert {
+           padding: 20px;
+           background-color: #f44336;
+           color: white;
+           opacity: 1;
+           transition: opacity 0.6s;
+           margin-bottom: 15px;
+         }
+         
+         .alert.success {background-color: #04AA6D;}
+         .alert.info {background-color: #2196F3;}
+         .alert.warning {background-color: #ff9800;}
+         
+         .closebtn {
+           margin-left: 15px;
+           color: white;
+           font-weight: bold;
+           float: right;
+           font-size: 22px;
+           line-height: 20px;
+           cursor: pointer;
+           transition: 0.3s;
+         }
+         
+         .closebtn:hover {
+           color: black;
+         }
+         </style>
+
+
+<!--search bar-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+</style>
+
+
+<!--footer-->
+
+<style>
+  .footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00ffff;
+    color: rgb(8, 8, 0);
+    text-align: center;
+  }
+  
+  .footer p {
+    margin-top: 10px;
+  }
+  
+  .footer a {
+    color: black;
+  }
+  
+  .footer a:hover {
+    color: #4CAF50;
+  }
+  
+  .youtube {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_twitter-512.png');
+  }
+  
+  .whatsapp {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_facebook-512.png');
+  }
+  
+  .telegram {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_linkedin-512.png');
+  }
+  
+  .instagram {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_instagram-512.png');
+  }
+  </style>
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="a,css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+   
+
+    
+    <!-- Navigation Bar -->
+   <CENTER> <nav>
+     <center>
+        <b>
+            WELCOME TO MY WEBSITE!
+        </b>
+     </center>
+    </nav>
+</CENTER>    
+
+
+
+  
+    <!--main tabs-->
+    <center>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .pill-nav a {
+          display: inline-block;
+          color: black;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+          font-size: 17px;
+          border-radius: 5px;
+        }
+        
+        .pill-nav a:hover {
+          background-color: #eaee03;
+          color: black;
+        }
+        
+        .pill-nav a.active {
+          background-color: dodgerblue;
+          color: white;
+        }
+        </style>
+       
+    
+    <!--pop up message-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+
+
+
+<body onload="startGame()">
+        
+    <h2></h2>
+    
+    <div class="pill-nav">
+      <a class="active" href="#my work">My work</a>
+      <a href="myweb.html">Home</a>
+      <a href="about me.html">About me</a>
+      <a href="contact.html">Contact</a>
+      
+    </div>
+    </center>
+
+<br>
+
+
+<!--search bar-->
+
+<center><p> search form:</p>
+
+<form>
+<input type="text" name="search" placeholder="Search..">
+</form>
+
+</center>
+<br><br>
+
+<br>
+<br>
+
+
+<!--alets -->
+
+
+<em></em><i><h2>Alert Messages</h2> </i></em>
+
+
+<p>Click on the "x" symbol to close the alert message.</p>
+<div class="alert">
+  <span class="closebtn">&times;</span>  
+  <strong>Danger!</strong> please subscribe my youtube channel.
+</div>
+
+<div class="alert success">
+  <span class="closebtn">&times;</span>  
+  <strong>Success!</strong> can you .
+</div>
+
+<div class="alert info">
+  <span class="closebtn">&times;</span>  
+  <strong>Info!</strong> subsribe my channel and enjoy!.
+</div>
+
+<!--<div class="alert warning">
+  <span class="closebtn">&times;</span>  
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div> -->
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+<br>
+<br>
+
+<hr color="red" width="900" >
+
+<br>
+  
+<!--pop up message-->
+<!--
+<h2>Popup Form</h2>
+<p>Click on the button at the bottom of this page to open the login form.</p>
+<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p> -->
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<br>
+
+
+
+  <!--pop up message-->
+<!--
+<h2>Popup Form</h2>
+<p>Click on the button at the bottom of this page to open the login form.</p>
+<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p> -->
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<!--time line-->
+
+
+
+<br>
+
+<!--my skills-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+</style>
+</head>
+<body>
+
+<h1>My Skills</h1>
+
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>PHP</p>
+<div class="container">
+  <div class="skills php">60%</div>
+</div>
+
+</body>
+</html>
+
+<br>
+
+<center><header><b><em><i><h1>  my projects :  </h1></i></em></b></header></center>
+
+<br>
+
+<header><b><h2> first webpage code </h2></b></header>
+
+
+<!-- The code field -->
+<textarea id="myInput">    </textarea>
+
+<!-- The button used to copy the text -->
+<button onclick="myFunction()">Copy code</button>
+
+<script>
+function myFunction() {
+  /* Get the code field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the code field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the code field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the code: " + copyText.value);
+}
+</script>
+
+
+
+<!-- Footer -->
+
+   
+  
+
+<div class="footer">
+	<p>@sl sadeepa tec 2023</p>
+	<a href="https://www.youtube.com/channel/UCpTbQ8rowBytgoF2YTvCsYQ/videos" class="youtube" target="_blank"> 
+	  <img src="youtube.png" alt="description of image" width="30" height="30">
+	</a>
+	<a href="https://chat.whatsapp.com/Ltnto7e2hwaHBATBXlAB37" class="whatsapp" target="_blank">
+	  <img src="whatsapps.png" alt="description of image" width="30" height="30">
+	</a>
+	<a href="https://t.me/SLSADEEPATEC" class="telegram" target="_blank">
+	  <img src="telegrams.png" alt="description of image" width="30" height="30">
+	</a>
+	<a href="#" class="instagram" target="_blank">
+	  <img src="Instagram.png" alt="description of image" width="30" height="30">
+	</a>
+  
+  <br>
+  <br>
+  
+  <!-- Contact Form -->
+  <section>
+	<form method="post" action="#">
+	  <div class="row gtr-50">
+		<div class="col-6 col-12-small">
+		  <input type="text" name="name" id="contact-name" placeholder="Name" />
+		</div>
+		<div class="col-6 col-12-small">
+		  <input type="text" name="email" id="contact-email" placeholder="Email" />
+		</div>
+		<div class="col-12">
+		  <textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+		</div>
+		<div class="col-12">
+		  <ul class="actions">
+			<input type="submit" class="style1" value="Send" />
+			<input type="reset" class="style1" value="Reset" />
+
+			<script>
+				document.querySelector('form').addEventListener('reset', function(a) {
+					a.preventDefault();
+					
+				});
+			</script>
+
+		  </ul>
+		</div>
+	  </div>
+	</form>
+  </section>
+  
+  <!-- Contact -->
+  <section class="feature-list small">
+	<div class="row">
+	  <div class="col-6 col-12-small">
+		<section>
+		  <h3 class="icon solid fa-home"> HOME Address </h3>
+		  <p>
+			PAHALA BUJJOMUWA<br />
+			BUJJOMUWA
+		</p>
+		</section>
+	  </div>
+   
+	  <div class="col-6 col-12-small">
+		<section>
+		  <h3 class="icon solid fa-envelope">Email</h3>
+		  <p>
+			<a href="#">SADEEPAPEMASIRI2@GMIAL.COM</a>
+		  </p>
+		</section>
+	  </div>
+	  <div class="col-6 col-12-small">
+		<section>
+		  <h3 class="icon solid fa-phone">Phone</h3>
+		  <p>
+			0717877839
+		  </p>
+		</section>
+	  </div>
+	</div>
+  </section>
+  
+  
+  
+	<center><li>
+	  <b>FOLLOW MY SOCIAL MEDIA</b>
+	</li>
+  
+  </center>
+  </div>
+
+
+
+    <!--link css-->
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="a,css">
+
+
+
+
+	
+</body>
+
+
+
+</html>

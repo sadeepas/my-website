@@ -1,0 +1,29 @@
+footer {
+    background-color: #00da62;
+    color: #db0000;
+    padding: 70px 0;
+  }
+  
+  footer h3 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  footer p {
+    font-size: 20px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 20px;
+  }
+  
+  footer hr {
+    border-top: 1px solid #ff006a;
+  }
+  
